@@ -1,46 +1,64 @@
+/* reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* full-page grey background */
+html,
+body,
+#root {
+  height: 100%;
+  background: #e6e6e6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* center the mobile-sized card */
 .page-shell {
   min-height: 100vh;
-  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 
-/* mobile-width card */
+/* mobile app card */
 .profile-card {
   width: 360px;
-  height: 92vh;
-  background: #ffffff;
+  height: 96vh;
+  background: #ffffff; /* card base */
   border: 1px solid #dcdcdc;
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-/* top heading */
+/* heading bar (white) */
 .account-title {
   font-size: 15px;
   font-weight: 700;
   padding: 12px 14px;
   margin: 0;
+  background: #ffffff;
   border-bottom: 1px solid #efefef;
 }
 
-/* light gray block */
+/* top info block (light grey) */
 .profile-section {
   background: #f7f7f7;
   padding: 12px 14px;
 }
 
-/* avatar + text */
+/* avatar row */
 .profile-row {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-/* avatar circle */
+/* avatar container */
 .avatar-wrap {
   position: relative;
   width: 55px;
@@ -54,7 +72,7 @@
   object-fit: cover;
 }
 
-/* purple camera dot */
+/* purple camera circle */
 .camera-badge {
   position: absolute;
   bottom: -3px;
@@ -70,7 +88,7 @@
   font-size: 11px;
 }
 
-/* name + email */
+/* text content */
 .name {
   font-size: 13px;
   font-weight: 800;
@@ -81,20 +99,19 @@
   color: #666;
 }
 
-/* paragraph */
 .desc {
   font-size: 12px;
   margin-top: 8px;
   line-height: 1.35;
 }
 
-/* dashed separator */
+/* dashed divider */
 .dash-divider {
   border-top: 1.3px dashed #d0d0d0;
 }
 
-/* huge empty lower space inside card */
+/* full lower section grey */
 .card-empty-space {
   flex-grow: 1;
-  background: #ffffff;
+  background: #f7f7f7; /* <-- requested change */
 }

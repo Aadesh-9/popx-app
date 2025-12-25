@@ -1,7 +1,7 @@
 .app-box {
   width: 400px;
   height: 100vh;
-  background: white;
+  background: transparent;
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);

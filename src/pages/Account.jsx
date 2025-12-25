@@ -30,8 +30,6 @@ const Account = () => {
           </p>
         </div>
 
-        <div className="dash-divider" />
-
         <div className="card-empty-space" />
       </div>
     </div>

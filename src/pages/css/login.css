@@ -1,41 +1,94 @@
+/* center like other pages */
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+/* white rounded mobile card */
+.profile-card {
+  width: 360px;
+  height: 96vh;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
+  display: flex;
+}
+
+/* inner light-grey area */
 .login-container {
+  background: #f7f7f7; /* <-- removes big white panel */
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 40px; /* pushes content down slightly */
+  flex-grow: 1;
 }
 
+/* title */
 .login-title {
   font-size: 22px;
   font-weight: 800;
 }
 
+/* subtitle */
 .login-subtitle {
   font-size: 13px;
   color: #666;
-  margin-bottom: 8px;
+  max-width: 260px;
+  margin-bottom: 2px;
 }
 
-.input-label {
-  font-size: 12px;
+/* fieldset box */
+.outlined-field {
+  border: 1px solid #d2d2d2;
+  border-radius: 8px;
+  padding: 6px 10px 4px 10px;
+  background: #ffffff; /* input box remains white */
+}
+
+/* remove defaults */
+fieldset {
+  min-width: 0;
+  margin: 0;
+  border-width: 1px;
+}
+
+/* legend strip */
+.outlined-legend {
+  font-size: 11px;
   font-weight: 700;
   color: #7c3aed;
+  padding: 0 6px;
+  background: #f7f7f7; /* <-- FIX: matches grey, white patch gone */
 }
 
-.login-input {
+/* input */
+.outlined-input {
   width: 100%;
-  padding: 9px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding: 4px 0 6px 0;
+  background: transparent;
 }
 
+/* purple border on focus */
+.outlined-field:focus-within {
+  border-color: #7c3aed;
+}
+
+/* login button */
 .login-btn {
   width: 100%;
-  padding: 11px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
   background: #d3d1d1;
   color: white;
-  border-radius: 10px;
-  border: none;
-  font-weight: 700;
-  margin-top: 6px;
+  margin-top: 8px;
 }

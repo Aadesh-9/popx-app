@@ -21,7 +21,7 @@ The app is designed to look like a mobile app centered on a desktop browser, wit
 
 1. Download or clone the project
 2. Open the folder in VS Code or any editor
-3. Run the following commands:
+3. Run the following commands -
 
 npm install  
 npm start

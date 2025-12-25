@@ -3,8 +3,8 @@
   flex-direction: column;
   gap: 12px;
 
-  margin-top: auto; /* push content to bottom */
-  padding-bottom: 34px; /* spacing from bottom */
+  margin-top: auto;
+  padding-bottom: 34px;
 }
 
 .title {

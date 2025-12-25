@@ -27,7 +27,7 @@ body,
 .profile-card {
   width: 360px;
   height: 96vh;
-  background: #ffffff; /* card base */
+  background: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 8px;
   display: flex;
@@ -113,5 +113,5 @@ body,
 /* full lower section grey */
 .card-empty-space {
   flex-grow: 1;
-  background: #f7f7f7; /* <-- requested change */
+  background: #f7f7f7;
 }

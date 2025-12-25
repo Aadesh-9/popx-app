@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function Welcome() {
+const Welcome = () => {
   return (
-    <>
+    <div className="welcome-wrap">
       <h2 className="title">Welcome to PopX</h2>
 
       <p className="subtitle">
@@ -16,6 +16,8 @@ export default function Welcome() {
       <Link to="/login">
         <button className="secondary-btn">Already Registered? Login</button>
       </Link>
-    </>
+    </div>
   );
-}
+};
+
+export default Welcome;

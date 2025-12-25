@@ -1,23 +1,30 @@
 /* main mobile card */
 
 .app-box {
-  width: 400px; /* fixed mobile width */
+  width: 400px;
   min-height: 750px;
   background: white;
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-
-  /* prevents stretch */
   max-width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.welcome-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 40px;
 }
 
 /* text */
 .title {
   font-size: 22px;
   font-weight: 800;
-  margin-top: 380px;
 }
 
 .subtitle {

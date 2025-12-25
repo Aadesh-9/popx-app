@@ -1,27 +1,31 @@
-import { Link } from "react-router-dom";
+import "./css/login.css";
 
-export default function Login() {
+const Login = () => {
   return (
-    <>
-      <h2 className="title">Signin to your PopX account</h2>
+    <div className="login-container">
+      <h2 className="login-title">Signin to your PopX account</h2>
 
-      <p className="subtitle">
+      <p className="login-subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       </p>
 
-      <label>Email Address</label>
-      <input className="text-input" placeholder="Enter email address" />
-
-      <label>Password</label>
+      <label className="input-label">Email Address</label>
       <input
-        className="text-input"
+        className="login-input"
+        type="email"
+        placeholder="Enter email address"
+      />
+
+      <label className="input-label">Password</label>
+      <input
+        className="login-input"
         type="password"
         placeholder="Enter password"
       />
 
-      <Link to="/account">
-        <button className="secondary-btn">Login</button>
-      </Link>
-    </>
+      <button className="login-btn">Login</button>
+    </div>
   );
-}
+};
+
+export default Login;

@@ -1,0 +1,87 @@
+/* full page card container */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* heading */
+.register-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+/* center body */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+/* fieldset box */
+.reg-field {
+  border: 1px solid #bfbfbf;
+  border-radius: 8px;
+  padding: 6px 10px 2px 10px;
+  margin: 0;
+}
+
+/* remove default spacing */
+fieldset {
+  min-width: 0;
+}
+
+/* label on border */
+.reg-legend {
+  font-size: 12px;
+  font-weight: 700;
+  color: #7c3aed;
+  padding: 0 6px;
+  background: #ffffff; /* hides border behind text */
+}
+
+/* red star */
+.req {
+  color: red;
+}
+
+/* inputs */
+.reg-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  padding: 4px 0 6px 0;
+}
+
+/* focus effect purple */
+.reg-field:focus-within {
+  border-color: #7c3aed;
+}
+
+/* radio title */
+.radio-title {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* inline radio buttons */
+.radio-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 2px;
+}
+
+/* create account button */
+.create-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7c3aed;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,82 +1,11 @@
-/* main mobile card */
-
 .app-box {
   width: 400px;
-  min-height: 750px;
+  height: 100vh;
   background: white;
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-  max-width: 100%;
-  position: relative;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-}
-
-.welcome-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-bottom: 40px;
-}
-
-/* text */
-.title {
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.subtitle {
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 18px;
-}
-
-/* buttons */
-
-.primary-btn {
-  width: 100%;
-  padding: 12px;
-  background: #7c3aed;
-  color: white;
-  border-radius: 10px;
-  border: none;
-  font-weight: 700;
-}
-
-.secondary-btn {
-  width: 100%;
-  padding: 12px;
-  background: #e8d8ff;
-  color: #4b1ea5;
-  border-radius: 10px;
-  border: none;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-/* inputs */
-
-.text-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-/* yellow bubbles */
-
-.circle {
-  width: 32px;
-  height: 32px;
-  background: #f2b400;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-  position: absolute;
 }

@@ -2,8 +2,8 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./layout/RootLayout";
-import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
+import Welcome from "./pages/welcome";
 import Register from "./pages/Register";
 import Account from "./pages/Account";
 

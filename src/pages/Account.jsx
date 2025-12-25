@@ -1,24 +1,41 @@
-export default function Account() {
+import "./css/account.css";
+
+const Account = () => {
   return (
-    <>
-      <h2 className="title">Account Settings</h2>
+    <div className="page-shell">
+      <div className="profile-card">
+        <h2 className="account-title">Account Settings</h2>
 
-      <div style={{ display: "flex", gap: "10px", marginTop: "15px" }}>
-        <img
-          src="https://i.pravatar.cc/80"
-          style={{ width: 55, height: 55, borderRadius: "50%" }}
-        />
+        <div className="profile-section">
+          <div className="profile-row">
+            <div className="avatar-wrap">
+              <img
+                src="https://i.imgur.com/6VBx3io.png"
+                className="avatar"
+                alt="avatar"
+              />
+              <span className="camera-badge">📷</span>
+            </div>
 
-        <div>
-          <strong>Marry Doe</strong>
-          <p>Marry@gmail.com</p>
+            <div>
+              <p className="name">Marry Doe</p>
+              <p className="email">Marry@Gmail.Com</p>
+            </div>
+          </div>
+
+          <p className="desc">
+            Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+            Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam
+            Erat, Sed Diam
+          </p>
         </div>
-      </div>
 
-      <p style={{ marginTop: "15px", fontSize: "13px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor.
-      </p>
-    </>
+        <div className="dash-divider" />
+
+        <div className="card-empty-space" />
+      </div>
+    </div>
   );
-}
+};
+
+export default Account;

@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* main mobile card */
+
+.app-box {
+  width: 400px; /* fixed mobile width */
+  min-height: 750px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+
+  /* prevents stretch */
+  max-width: 100%;
+  position: relative;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* text */
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 380px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* buttons */
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7c3aed;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
 }
 
-.card {
-  padding: 2em;
+.secondary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e8d8ff;
+  color: #4b1ea5;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+/* inputs */
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+/* yellow bubbles */
+
+.circle {
+  width: 32px;
+  height: 32px;
+  background: #f2b400;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  position: absolute;
 }
